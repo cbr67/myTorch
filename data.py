@@ -18,7 +18,7 @@ def load_tabular_data(file_path):
     elif file_path.endswith('.xlsx'):
         return pd.read_excel(file_path)
     elif file_path.endswith('.txt'):
-        return pd.read_csv("linear.txt", delim_whitespace=True)
+        return pd.read_csv(file_path, delim_whitespace=True)
     else:
         raise ValueError("Unsupported file format.")
     
